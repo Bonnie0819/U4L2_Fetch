@@ -2,7 +2,6 @@
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(response => response.json())
 .then(data => {
-console.log(data);
 const users = data.map(users => {
     return `
         <h3>${users.username} </h3>
@@ -13,8 +12,15 @@ const users = data.map(users => {
 document.getElementById("users").innerHTML = users;
 });
 
-//fetches post 1-2
+//fetches post 1-5
 fetch('https://jsonplaceholder.typicode.com/posts')
-
-//fetches comments based on the different posts
+.then(response => response.json())
+.then(data => {
+    for(let i = 0; i < 5; i++) {
+        const post = data[i];
+        console.log(post);
+        document.getElementById("posts").innerHTML += post.title;
+    }
+    
+});
 

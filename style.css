@@ -3,7 +3,7 @@ body{
     color: #ffffff;
 }
 h1{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -15,4 +15,10 @@ h1{
 #users h3{
 }
 #users p{
+}
+.grid{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    text-align: center;
 }
