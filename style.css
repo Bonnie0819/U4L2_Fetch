@@ -1,24 +1,37 @@
-body{
-    background-color: #2795fc;
+body {
+    background-color: #000000;
     color: #ffffff;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 50px;
+    padding: 50px;
 }
 h1{
     font-size: 50px;
     text-align: center;
+    text-decoration: underline overline;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
 }
 
 /*Styling for user div*/
-#users{
-    background-color: #2795fc;
-    color: #000000;
+#users {
+    display:grid;
+    grid-template-rows:auto;
+    text-align: center;
+    border: 4px solid #ffffff;
 }
-#users h3{
-}
-#users p{
-}
-.grid{
+.grid {
+    padding: 25px;
+    margin: 50px;
     display:grid;
     grid-template-columns: 60% 40%;
     justify-content: center;
     text-align: center;
+}
+.img {
+    padding: 50px;
+    margin: 50px;
 }
